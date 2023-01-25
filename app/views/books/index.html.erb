@@ -1,0 +1,29 @@
+<h1>Books</h1>
+
+<ul>
+  <% @books.each do |book| %>
+    <li>
+        <a href="/books/<%= book.id %>">
+        <%= book.title %>
+        </a>
+    </li>
+  <% end %>
+</ul>
+
+
+
+<!-- <h1>Books#index</h1> -->
+<!-- <p>Find me in app/views/books/index.html.erb</p> -->
+
+<!-- <img src="https://i.pinimg.com/564x/4a/98/96/4a989698ff69418449b9b3a003a8653b.jpg	" alt="Girl in a jacket" width="500" height="600"> --><br>
+
+Assets folder <br>
+<%= image_tag('test.png')%><br> 
+
+From Public folder<br>
+<%= image_tag('/test2.png')%><br>
+
+
+from Google Online Source<br>
+<%= image_tag('https://i.pinimg.com/564x/fe/92/ba/fe92baff209f1886acb9fa3ddf26a7f0.jpg')%>
+
